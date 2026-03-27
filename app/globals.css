@@ -50,44 +50,42 @@
    ========================================================= */
 
 :root {
-  /* 🏛️ The Foundation (Clean & Bright) */
-  --background: oklch(0.99 0 0); /* Pure White - Maximum transparency */
-  --foreground: oklch(0.2 0.02 260); /* Deep Slate Text - High readability */
+  /* 🏛️ The Foundation (Institutional Slate) */
+  --background: oklch(0.984 0.003 247.858); /* Slate-50 */
+  --foreground: oklch(0.21 0.006 285.885); /* Slate-900 */
 
   /* 💎 Institutional Surfaces */
-  --card: oklch(0.99 0 0);
-  --card-foreground: oklch(0.2 0.02 260);
-  --popover: oklch(0.99 0 0);
-  --popover-foreground: oklch(0.2 0.02 260);
+  --card: oklch(1 0 0); /* White */
+  --card-foreground: oklch(0.21 0.006 285.885); /* Slate-900 */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.006 285.885);
 
   /* 🛡️ Corporate Trust (Primary Identity) */
-  --primary: oklch(
-    0.45 0.15 250
-  ); /* Trust Blue - Like a major bank or institution */
-  --primary-foreground: oklch(0.98 0 0); /* White text on primary buttons */
+  --primary: oklch(0.21 0.006 285.885); /* Slate-900 */
+  --primary-foreground: oklch(0.984 0.003 247.858); /* Slate-50 */
 
   /* ⚖️ Structural Elements */
-  --secondary: oklch(0.95 0.01 260); /* Light Gray for secondary backgrounds */
-  --secondary-foreground: oklch(0.3 0.03 260);
+  --secondary: oklch(0.546 0.245 262.881); /* Blue-600 */
+  --secondary-foreground: oklch(0.984 0.003 247.858);
 
-  --muted: oklch(0.96 0.01 260);
-  --muted-foreground: oklch(0.5 0.02 260);
+  --muted: oklch(0.92 0.004 286.32); /* Slate-200-ish */
+  --muted-foreground: oklch(0.446 0.03 256.802); /* Slate-600 */
 
   /* ✨ Verification Accent */
-  --accent: oklch(0.95 0.01 260);
-  --accent-foreground: oklch(0.2 0.02 260);
+  --accent: oklch(0.546 0.245 262.881); /* Blue-600 */
+  --accent-foreground: oklch(0.984 0.003 247.858);
 
   /* System States */
-  --destructive: oklch(0.6 0.2 25); /* Clear red for errors */
-  --destructive-foreground: oklch(0.98 0 0);
-  --success: oklch(0.6 0.15 150); /* Green for verified status */
-  --success-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.577 0.245 27.325); /* Red-600 */
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --success: oklch(0.627 0.194 149.214); /* Green-600 */
+  --success-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.9 0.02 260); /* Clean, crisp borders */
-  --input: oklch(0.9 0.02 260);
-  --ring: oklch(0.45 0.15 250 / 0.3);
+  --border: oklch(0.92 0.004 286.32); /* Slate-200 */
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.21 0.006 285.885 / 0.3);
 
-  --radius: 0.5rem; /* Professional, structured corners */
+  --radius: 0.375rem; /* Professional, structured corners */
 }
 
 /* Base Layer Protocols */
