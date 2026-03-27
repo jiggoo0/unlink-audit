@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface System */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  /* Action System */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Infrastructure */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Typography */
+  --font-sans:
+    var(--font-inter), var(--font-noto-thai), ui-sans-serif, system-ui,
+    sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+
+  /* Global Metrics */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Animation Protocol */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+/* =========================================================
+   🛡️ UNLINK PROTOCOL: INSTITUTIONAL AUTHORITY (CLEAN & TRUSTED)
+   ---------------------------------------------------------
+   Theme: Pristine White, Corporate Trust Blue & Clean Slate
+   Strategy: 0 Baht SEO (E-E-A-T Optimized, Accessible Design)
+   ========================================================= */
+
+:root {
+  /* 🏛️ The Foundation (Clean & Bright) */
+  --background: oklch(0.99 0 0); /* Pure White - Maximum transparency */
+  --foreground: oklch(0.2 0.02 260); /* Deep Slate Text - High readability */
+
+  /* 💎 Institutional Surfaces */
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.2 0.02 260);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.2 0.02 260);
+
+  /* 🛡️ Corporate Trust (Primary Identity) */
+  --primary: oklch(
+    0.45 0.15 250
+  ); /* Trust Blue - Like a major bank or institution */
+  --primary-foreground: oklch(0.98 0 0); /* White text on primary buttons */
+
+  /* ⚖️ Structural Elements */
+  --secondary: oklch(0.95 0.01 260); /* Light Gray for secondary backgrounds */
+  --secondary-foreground: oklch(0.3 0.03 260);
+
+  --muted: oklch(0.96 0.01 260);
+  --muted-foreground: oklch(0.5 0.02 260);
+
+  /* ✨ Verification Accent */
+  --accent: oklch(0.95 0.01 260);
+  --accent-foreground: oklch(0.2 0.02 260);
+
+  /* System States */
+  --destructive: oklch(0.6 0.2 25); /* Clear red for errors */
+  --destructive-foreground: oklch(0.98 0 0);
+  --success: oklch(0.6 0.15 150); /* Green for verified status */
+  --success-foreground: oklch(0.98 0 0);
+
+  --border: oklch(0.9 0.02 260); /* Clean, crisp borders */
+  --input: oklch(0.9 0.02 260);
+  --ring: oklch(0.45 0.15 250 / 0.3);
+
+  --radius: 0.5rem; /* Professional, structured corners */
+}
+
+/* Base Layer Protocols */
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    /* Explicitly forcing light mode to avoid dark aesthetics */
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+  }
+
+  /* Institutional Heading Authority */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--foreground);
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 7vw, 4rem);
+  }
+  h2 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+  }
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+}
+
+/* Elite Component Protocols */
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    max-width: 80rem;
+  }
+
+  /* 💎 The Clean Authority Card */
+  .authority-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow:
+      0 4px 6px -1px oklch(0 0 0 / 0.05),
+      0 2px 4px -2px oklch(0 0 0 / 0.05); /* Very light, professional shadow */
+    transition: all 300ms ease;
+  }
+
+  .authority-card:hover {
+    border-color: color-mix(in oklch, var(--primary) 30%, var(--border));
+    box-shadow:
+      0 10px 15px -3px oklch(0 0 0 / 0.08),
+      0 4px 6px -4px oklch(0 0 0 / 0.05);
+    transform: translateY(-2px);
+  }
+
+  /* Status Badges */
+  .badge-verified {
+    background-color: var(--success);
+    color: var(--success-foreground);
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
