@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { initAuditDatabase } from "@/lib/shared-source/db";
+import { initAuditDatabase } from "@/lib/init-logic";
 
 export async function GET(request: Request) {
   // 🛡️ ระบบป้องกันความปลอดภัยพื้นฐาน (Check Secret Key)

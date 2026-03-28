@@ -39,3 +39,4 @@ compliance/
 
 # [SUPREME COMMAND] Block AI Identity Folders
 .gemini/
+.env.local

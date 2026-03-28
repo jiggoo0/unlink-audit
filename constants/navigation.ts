@@ -40,45 +40,48 @@ export const mainNav: NavItem[] = [
 
 export const serviceCategories = [
   {
-    title: "Instant Alignment",
-    description: "ระบบออกเอกสารอัตโนมัติ (จองตั๋ว/โรงแรม)",
-    items: [
-      { title: "Flight Itinerary", href: "/services/flight-itinerary-visa" },
-      { title: "Hotel Booking", href: "/services/hotel-booking" },
-    ],
-  },
-  {
-    title: "Reputation Shield",
-    description: "จัดการชื่อเสียงและลบข้อมูลออนไลน์",
+    title: "Reputation Fix",
+    description: "การกู้คืนและเยียวยาภาพลักษณ์ที่ได้รับความเสียหาย",
     items: [
       { title: "Extreme Intervention", href: "/services/extreme-intervention" },
-      { title: "Blacklist Remover", href: "/services/blacklist-remover" },
+      { title: "Blacklist Elimination", href: "/services/blacklist-removal" },
       { title: "Digital Crisis Cleanup", href: "/services/crisis-cleanup" },
     ],
   },
   {
-    title: "Financial & Credit",
-    description: "ฟื้นฟูเครดิตและวางแผนการเงิน",
+    title: "Reputation Protection",
+    description: "การอภิบาลและเสริมสร้างเกียรติภูมิระดับสถาบัน",
     items: [
-      { title: "Credit Engineering", href: "/services/credit-engineering" },
-      {
-        title: "Statement Optimization",
-        href: "/services/statement-optimization",
-      },
+      { title: "Brand Identity Engineering", href: "/services/brand-identity-engineering" },
+      { title: "Digital Identity Detox", href: "/services/professional-digital-detox" },
+      { title: "Institutional Reliability", href: "/services/institutional-reliability" },
+    ],
+  },
+  {
+    title: "IP Confirmation",
+    description: "การรับรองและพิทักษ์สิทธิในทรัพย์สินทางปัญญา",
+    items: [
+      { title: "Private IP Registration", href: "/services/private-ip-registration" },
+      { title: "Patent & Trademark Strategy", href: "/services/patent-trademark-strategy" },
+    ],
+  },
+  {
+    title: "PDPA Enforcement",
+    description: "การบังคับใช้สิทธิตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล",
+    items: [
+      { title: "PDPA Legal Enforcement", href: "/services/pdpa-legal-action" },
+      { title: "Corporate Data Governance", href: "/services/corporate-compliance" },
     ],
   },
 ];
 
 export const footerNav = {
   solutions: [
-    { title: "แก้เครดิตบูโร/กู้บ้าน", href: "/services/credit-engineering" },
-    { title: "ลบชื่อประจานออนไลน์", href: "/services/blacklist-remover" },
-    { title: "บริการจองตั๋ว/โรงแรม", href: "/services/flight-itinerary-visa" },
-    {
-      title: "กู้ชื่อเสียงร้านค้า SME",
-      href: "/services/sme-reputation-rescue",
-    },
-    { title: "จัดการข้อมูลส่วนตัว", href: "/services/ex-partner-eraser" },
+    { title: "กู้คืนชื่อเสียงขั้นสูงสุด", href: "/services/extreme-intervention" },
+    { title: "ล้างประวัติแบล็คลิสต์", href: "/services/blacklist-removal" },
+    { title: "ปกป้องอัตลักษณ์แบรนด์", href: "/services/brand-identity-engineering" },
+    { title: "จดทะเบียนทรัพย์สินทางปัญญา", href: "/services/private-ip-registration" },
+    { title: "ฟ้องละเมิด PDPA", href: "/services/pdpa-legal-action" },
   ],
   support: [
     { title: "นโยบายความเป็นส่วนตัว", href: "/privacy" },

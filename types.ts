@@ -1,3 +1,67 @@
+export interface SiteConfig {
+  name: string;
+  fullName?: string;
+  description: string;
+  url: string;
+  ogImage: string;
+  adsense?: {
+    publisherId: string;
+    clientId: string;
+  };
+  locale?: string;
+  language?: string;
+  founder: {
+    name?: string;
+    nameTh: string;
+    nameEn?: string;
+    nickname?: string;
+    alias: string;
+    role: string;
+    roleTh?: string;
+    description?: string;
+    url: string;
+    sameAs?: string[];
+  };
+  company?: {
+    slogan: string;
+    approach: string;
+    positioning: string;
+    legalName: string;
+  };
+  developer?: {
+    name: string;
+    fullname: string;
+    url: string;
+    role: string;
+  };
+  seo?: {
+    titleTemplate: string;
+    defaultTitle: string;
+    defaultDescription: string;
+    keywords: string[];
+  };
+  contact: {
+    primaryChannel: string;
+    lineUrl: string;
+    lineId: string;
+    phone: string;
+    email: string;
+    qrImage: string;
+    note: string;
+  };
+  links: {
+    facebook: string;
+    twitter: string;
+    line: string;
+  };
+  footer?: {
+    disclaimer: string;
+    trustNote: string;
+    copyright: string;
+    links: { title: string; href: string }[];
+  };
+}
+
 export interface Identity {
   id: string;
   type: "person" | "organization";
