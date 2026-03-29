@@ -58,7 +58,7 @@ export default function Footer() {
                 </span>
               </Link>
               <Link
-                href="https://unlink-registry.com"
+                href="https://registry.unlink-th.com"
                 target="_blank"
                 className="bg-white/50 border-border/60 flex items-center gap-4 rounded-2xl border px-8 py-5 shadow-sm backdrop-blur-sm transition-all hover:border-primary/20 hover:bg-primary/5 group"
               >

@@ -185,7 +185,7 @@ export default function Navbar() {
               Portal
             </Link>
             <Link
-              href="https://unlink-registry.com"
+              href="https://registry.unlink-th.com"
               target="_blank"
               className="hover:text-primary text-muted-foreground/60 flex items-center gap-1.5 px-3 py-2 text-[9px] font-bold tracking-widest uppercase transition-all"
             >
@@ -308,7 +308,7 @@ export default function Navbar() {
                     Portal
                   </Link>
                   <Link
-                    href="https://unlink-registry.com"
+                    href="https://registry.unlink-th.com"
                     target="_blank"
                     onClick={closeMenu}
                     className="flex flex-col items-center justify-center gap-2 rounded-2xl border border-border/60 bg-secondary/30 p-4 text-[9px] font-black uppercase tracking-widest text-muted-foreground transition-all active:scale-95"
