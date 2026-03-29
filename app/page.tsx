@@ -5,7 +5,7 @@
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
 
-import Script from "next/script";
+
 import { db } from "@/lib/shared-source/db";
 
 /**
@@ -52,34 +52,10 @@ export default async function AuditHome() {
     errorState = true;
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "UNLINK-TH Security Audit & Compliance",
-    url: "https://audit.unlink-th.com",
-    description:
-      "Centralized Security Audit & Compliance Log for UNLINK-GLOBAL Ecosystem.",
-    publisher: {
-      "@type": "Organization",
-      name: "AEMDEVWEB",
-      sameAs: ["https://www.aemdevweb.com", "https://me.aemdevweb.com"],
-    },
-    author: {
-      "@type": "Person",
-      name: "Alongkorn Yomkerd",
-      alternateName: "9mza",
-      sameAs: ["https://me.aemdevweb.com", "https://github.com/9mza"],
-    },
-  };
+
 
   return (
     <main className="min-h-screen bg-background text-foreground font-sans p-4 md:p-12 flex flex-col">
-      <Script
-        id="schema-org"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       {/* HEADER: ELITE INSTITUTIONAL BRANDING */}
       <section className="border-b border-border pb-6 mb-12 flex flex-col md:flex-row justify-between items-start md:items-end">
         <div>

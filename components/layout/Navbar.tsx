@@ -25,7 +25,6 @@ import {
   serviceCategories,
 } from "@/constants/navigation";
 import Image from "next/image";
-import { siteConfig } from "@/constants/site-config";
 
 /**
  * UNLINK-AUDIT | High-Performance Navigation System (v5.0)

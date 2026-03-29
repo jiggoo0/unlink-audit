@@ -1,11 +1,9 @@
 /** @format */
 
 import Link from "next/link";
-import { siteConfig } from "@/constants/site-config";
 import {
   Globe,
   Terminal,
-  ShieldCheck,
   ExternalLink,
   Activity,
   Database,
@@ -171,6 +169,12 @@ export default function Footer() {
               © {new Date().getFullYear()} UNLINK-AUDIT • Status:
               <span className="text-primary ml-2">OPERATIONAL</span>
             </p>
+            {/* Intentional Signatures */}
+            <div className="mt-1 flex flex-wrap gap-3 text-[8px] font-black tracking-widest text-muted-foreground/30 uppercase">
+              <span>นายอลงกรณ์ ยมเกิด</span>
+              <span>9mza</span>
+              <span>เจ้าป่า</span>
+            </div>
             <p className="text-muted-foreground/60 font-mono text-[7px] tracking-[0.5em] uppercase">
               NODE_ID: 0x_AUDIT_2026_STABLE
             </p>

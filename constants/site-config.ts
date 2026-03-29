@@ -3,10 +3,10 @@
 import { SiteConfig } from "../types";
 
 export const siteConfig: SiteConfig = {
-  name: "UNLINK-THAILAND Security Audit",
-  fullName: "UNLINK-THAILAND | Security Audit & Compliance Node",
+  name: "UNLINK THAILAND | Security Audit Node",
+  fullName: "UNLINK THAILAND | Security Audit Node (หน่วยงานตรวจสอบความปลอดภัย)",
   description:
-    "Centralized Security Audit & Compliance Log for UNLINK-THAILAND Ecosystem. Ensuring transparency and integrity for all reputation management operations.",
+    "หน่วยงานตรวจสอบความปลอดภัยและธรรมาภิบาลข้อมูล (Security Audit & Compliance Node) ภายใต้เครือข่าย UNLINK THAILAND เพื่อรับประกันความถูกต้องและโปร่งใสสูงสุด",
   url: "https://audit.unlink-th.com",
   ogImage: "/og/og-audit.webp",
 
@@ -22,10 +22,10 @@ export const siteConfig: SiteConfig = {
   // 👑 FOUNDER & AUTHORITY (รักษาความลับหน้าบ้าน ยืนยันตัวตนหลังบ้าน)
   // ------------------------------------------------------------------
   founder: {
-    name: "9mza",
-    nameTh: "นายเอ็มซ่ามากส์ (อลงกรณ์ ยมเกิด)",
+    name: "Alongkorn Yomkerd",
+    nameTh: "นายอลงกรณ์ ยมเกิด",
     nickname: "9mza",
-    alias: "Alongkorn Yomkerd",
+    alias: "เจ้าป่า",
     role: "Lead Infrastructure Architect",
     roleTh: "หัวหน้าฝ่ายสถาปัตยกรรมข้อมูลและการจัดการวิกฤต",
     description:

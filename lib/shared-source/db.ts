@@ -21,7 +21,7 @@ interface HranaCell {
   base64?: string;
 }
 
-export interface ResultSet {
+interface ResultSet {
   rows: Record<string, string | number | boolean | null>[];
 }
 
@@ -107,7 +107,7 @@ export const db = {
               else if (cell.type === "text") val = cell.value as string;
               else if (cell.type === "blob") val = cell.base64 || null;
             } else {
-              val = cell as any;
+              val = cell as string | number | boolean | null;
             }
             rowObj[columns[index]] = val === undefined ? null : val;
           });

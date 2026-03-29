@@ -11,16 +11,6 @@ import { db } from "./shared-source/db";
  * ระบบจำลองการตรวจจับภัยคุกคามโดยอัตโนมัติจาก Audit Logs
  */
 
-export interface ThreatAlert {
-  id: string;
-  type: string;
-  severity: "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
-  description: string;
-  metadata: string;
-  is_resolved: number;
-  created_at: string;
-}
-
 export const threatDetection = {
   /**
    * 🔍 Scan recent logs for suspicious patterns
@@ -118,7 +108,7 @@ export const threatDetection = {
       sql: `SELECT * FROM threat_alerts ORDER BY created_at DESC LIMIT ?`,
       args: [limit],
     });
-    return result.rows as unknown as ThreatAlert[];
+    return result.rows;
   },
 
   /**

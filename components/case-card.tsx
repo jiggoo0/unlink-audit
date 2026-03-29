@@ -1,6 +1,6 @@
 import { format } from "date-fns";
 
-export interface CaseData {
+interface CaseData {
   id: string;
   client_id?: string;
   service_type: "reputation_repair" | "reputation_protection" | "pdpa_enforcement";

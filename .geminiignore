@@ -1,22 +1,44 @@
+# 🛡️ 9mza PRO - UNIFIED AI IGNORE (Standard v2.1)
+
+# Node.js & Next.js Artifacts
 node_modules/
 .next/
 .vercel/
-.git/
 .turbo/
 dist/
 build/
+out/
+.cache/
+.pnpm-store/
+.npm/
+
+# Logs & Temporary Files
 *.log
 *.tsbuildinfo
 *.lock
-.env*
-public/images/
-public/assets/
-.cache/
+pnpm-debug.log*
 tmp/
 temp/
+
+# Version Control & Environments
+.git/
+.env*
+.DS_Store
+
+# Large Assets (AI doesn't need to read images)
+public/images/
+public/assets/
+public/videos/
+
+# AI Orchestration Logs (Prevent recursive reading)
+docs/maestro/
+.gemini/tmp/
+.gemini/history/
+
+# 💡 WHITELIST - ESSENTIAL AI CONTEXT
 !.gemini/
 !GEMINI.md
 !package.json
-
-.pnpm-store/
-.pnpm-debug.log
+!pnpm-lock.yaml
+!tsconfig.json
+!next.config.js

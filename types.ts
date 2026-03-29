@@ -79,14 +79,3 @@ export interface Identity {
   metadata?: string;
   sameAs?: string[];
 }
-
-export interface AuditLog {
-  id: string;
-  domain: string;
-  action: string;
-  actor_id?: string;
-  status: string;
-  metadata?: string;
-  ip_address?: string;
-  created_at: string;
-}

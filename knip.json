@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "next": {
+    "entry": [
+      "next.config.{js,ts,mjs}",
+      "app/**/page.{js,jsx,ts,tsx}",
+      "app/**/layout.{js,jsx,ts,tsx}",
+      "app/**/not-found.{js,jsx,ts,tsx}",
+      "app/**/error.{js,jsx,ts,tsx}",
+      "app/**/loading.{js,jsx,ts,tsx}",
+      "app/**/route.{js,jsx,ts,tsx}",
+      "app/sitemap.{js,ts}",
+      "app/robots.{js,ts}"
+    ]
+  },
+  "project": ["**/*.{js,jsx,ts,tsx}"],
+  "ignore": [],
+  "ignoreDependencies": []
+}
